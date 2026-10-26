@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toko Craft | Manik-manik, Rajut, Kawat Bulu</title>
+<meta name="description" content="Kerajinan tangan manik-manik, rajut, dan kawat bulu. Bisa digabung dan dipesan sesuai warna dan gayamu.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="lompat" href="#produk">Langsung ke produk</a>
+
+<header class="kepala">
+  <div class="wadah kepala-isi">
+    <a class="logo" href="#atas" id="logo-nama">Toko Craft</a>
+    <nav class="menu" aria-label="Menu utama">
+      <a href="#produk">Produk</a>
+      <a href="#kreasi">Kreasi sendiri</a>
+      <a href="#cara">Cara pesan</a>
+    </nav>
+  </div>
+</header>
+
+<main id="atas">
+  <section class="pahlawan">
+    <svg class="tali" id="tali" viewBox="0 0 1200 70" preserveAspectRatio="xMidYMin slice" aria-hidden="true"></svg>
+    <div class="wadah pahlawan-isi">
+      <div class="pahlawan-teks">
+        <p class="label">Kerajinan tangan</p>
+        <h1>Manik-manik, rajut, dan kawat bulu, dibuat dengan tangan.</h1>
+        <p class="lead">Gantungan kunci, boneka, sampai bucket bunga. Mau digabung jadi satu? Bisa.</p>
+        <div class="tombol-baris">
+          <a class="tombol" href="#produk">Lihat produk</a>
+          <a class="tombol putih" href="#kreasi">Kreasi sendiri</a>
+        </div>
+      </div>
+      <div class="pahlawan-seni" id="pahlawan-seni" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="wadah bahan" aria-label="Tiga bahan">
+    <div class="bahan-kartu pink"><h2>Manik-manik</h2><p>Gantungan kunci, gelang, dan cincin.</p></div>
+    <div class="bahan-kartu mint"><h2>Rajut</h2><p>Boneka, syal, gantungan kunci, dan bunga.</p></div>
+    <div class="bahan-kartu lav"><h2>Kawat bulu</h2><p>Bunga tangkai, bucket, dan kreasi lain.</p></div>
+  </section>
+
+  <div class="benang" aria-hidden="true"></div>
+
+  <section class="bagian wadah" id="produk" aria-labelledby="j-produk">
+    <p class="label">Produk</p>
+    <h2 id="j-produk">Pilih bahannya, atau gabungkan semuanya.</h2>
+    <p class="catatan">Karena dibuat tangan, warna dan ukuran bisa sedikit berbeda di setiap barang.</p>
+    <div class="saring" id="saring" role="group" aria-label="Saring produk"></div>
+    <div class="kisi" id="kisi"></div>
+  </section>
+
+  <div class="benang" aria-hidden="true"></div>
+
+  <section class="bagian wadah" id="kreasi" aria-labelledby="j-kreasi">
+    <p class="label">Kreasi sendiri</p>
+    <h2 id="j-kreasi">Punya ide? Susun sendiri kreasimu.</h2>
+    <p class="catatan">Pilih jenis, bahan, dan warna. Hasilnya jadi pesan siap kirim ke penjual.</p>
+    <form class="kreasi-form" id="kreasi-form" novalidate>
+      <div class="kolom">
+        <label class="judul-kecil" for="k-jenis">Jenis</label>
+        <select id="k-jenis">
+          <option>Gantungan kunci</option>
+          <option>Gelang</option>
+          <option>Bucket bunga</option>
+          <option>Hiasan lain</option>
+        </select>
+
+        <span class="judul-kecil" id="k-bahan-judul">Bahan (boleh lebih dari satu)</span>
+        <div class="pilihan" role="group" aria-labelledby="k-bahan-judul">
+          <label class="chip"><input type="checkbox" name="bahan" value="Manik-manik" checked><span>Manik-manik</span></label>
+          <label class="chip"><input type="checkbox" name="bahan" value="Rajut" checked><span>Rajut</span></label>
+          <label class="chip"><input type="checkbox" name="bahan" value="Kawat bulu"><span>Kawat bulu</span></label>
+        </div>
+
+        <span class="judul-kecil" id="k-warna-judul">Warna utama</span>
+        <div class="pilihan" role="radiogroup" aria-labelledby="k-warna-judul" id="k-warna"></div>
+      </div>
+      <div class="kolom">
+        <label class="judul-kecil" for="k-catatan">Catatan (nama, inisial, atau ide lain)</label>
+        <textarea id="k-catatan" rows="4" placeholder="Contoh: huruf R dan bentuk kucing"></textarea>
+        <div class="ringkas" id="k-ringkas" aria-live="polite"></div>
+        <a class="tombol" href="#" id="k-kirim" data-pesan="">Kirim ide ke WhatsApp</a>
+      </div>
+    </form>
+  </section>
+
+  <div class="benang" aria-hidden="true"></div>
+
+  <section class="bagian wadah" id="cara" aria-labelledby="j-cara">
+    <p class="label">Cara pesan</p>
+    <h2 id="j-cara">Empat langkah sampai kreasimu jadi.</h2>
+    <ol class="langkah">
+      <li><span class="no">1</span><h3>Pilih barang</h3><p>Catat nama produk dan jumlahnya.</p></li>
+      <li><span class="no">2</span><h3>Ceritakan idemu</h3><p>Sebutkan warna, nama, atau kombinasi bahan.</p></li>
+      <li><span class="no">3</span><h3>Konfirmasi</h3><p>Harga dan waktu pengerjaan dicek dulu.</p></li>
+      <li><span class="no">4</span><h3>Barang dikirim</h3><p>Dikemas rapi lalu dikirim ke alamatmu.</p></li>
+    </ol>
+  </section>
+</main>
+
+<footer class="kaki">
+  <div class="wadah kaki-isi">
+    <p id="kaki-teks">Kerajinan tangan manik-manik, rajut, dan kawat bulu.</p>
+    <p id="kaki-kontak"></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/data.js"></script>
+<script src="js/seni.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
